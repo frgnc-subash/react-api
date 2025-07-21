@@ -80,6 +80,9 @@ const Post = () => {
               </div>
               <br />
               <button onClick={() => editPost(post.id)}>Edit</button>
+              <button onClick={() => navigate(`post/${post.id}`)}>
+                Post Details
+              </button>
             </Fragment>
           );
         })}
