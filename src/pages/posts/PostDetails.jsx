@@ -15,7 +15,7 @@ const PostDetails = () => {
       };
       getPost();
     }
-  }, [id]);
+  }, [POST_URL, id]);
   
   return (
     <div>
