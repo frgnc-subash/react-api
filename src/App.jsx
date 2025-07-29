@@ -18,7 +18,7 @@ const App = () => {
   ];
 
   const openRoutes = [{ path: "/login", element: <Login /> }];
-  
+
   const element = useRoutes(isAuthenticated ? myRoutes : openRoutes);
   return <>{element}</>;
 };

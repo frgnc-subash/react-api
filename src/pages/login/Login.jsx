@@ -10,7 +10,7 @@ const Login = () => {
       email,
       password: password,
     };
-    const response = await axios.post(LOGIN_URL,payload);
+    const response = await axios.post(LOGIN_URL, payload);
     localStorage.setItem("token", response.data.access_token);
   };
   return (
