@@ -9,7 +9,7 @@ import React from "react";
 
 export const BASE_URL = "https://jsonplaceholder.typicode.com";
 const App = () => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+  const [isAuthenticated] = React.useState(false);
   const myRoutes = [
     { path: "/", element: <Post /> },
     { path: "/users", element: <Users /> },
